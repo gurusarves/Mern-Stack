@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float Combined</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      border: 2px solid black;
+      padding: 15px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .yellow-box {
+      background-color: yellow;
+    }
+
+    .green-box {
+      background-color: lightgreen;
+      float: left;
+      width: 40%;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .white-box {
+      background-color: white;
+    }
+
+    .float-box {
+      float: right;
+      width: 120px;
+      margin-left: 10px;
+      text-align: center;
+    }
+
+    .float-box img {
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <!-- First Design -->
+  <div class="container yellow-box clearfix">
+    <div class="green-box">
+      Doraemon is a beloved cartoon character adored by kids all over the world.<br>
+      Doraemon is a robotic cat from the future who travels back in time to help a young boy named Nobita.
+    </div>
+    With his magical gadgets and clever solutions, Doraemon always manages to turn Nobita's troubles into exciting adventures. Whether it's rescuing friends, solving problems, or teaching important life lessons, Doraemon's kind heart and unwavering friendship make him a true hero. Kids are captivated by Doraemon's cute appearance, humorous antics, and the imaginative world he brings to life, making him an endearing and unforgettable character in their lives.
+  </div>
+
+  <!-- Second Design -->
+  <div class="container white-box clearfix">
+    <div class="float-box">
+      <img src="1641714991856.jpg" alt="Pikachu">
+    </div>
+    Pokémon, short for "Pocket Monsters," is a globally beloved franchise that originated in Japan. It is created by Satoshi Tajiri and Ken Sugimori, and captures the imagination of millions with its unique blend of adventure, friendship, and the pursuit of becoming a Pokémon Master. In this fictional world, trainers embark on journeys to capture, train, and battle creatures known as Pokémon. Each Pokémon possesses its own unique abilities, characteristics, and types, allowing for strategic battles and endless combinations.
+  </div>
+</body>
+</html>   
